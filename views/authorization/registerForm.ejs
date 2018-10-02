@@ -7,16 +7,18 @@
 	<%- include ../parts/navBar.ejs %>
 
 	<div class="login-form-div">
-		<form action="/authorization/login" method="post">
-			<h1 class="login-form-h1">Authorization</h1>
+		<form action="/authorization/register" method="post">
+			<h1 class="login-form-h1">Registration</h1>
 			<div class="form-group">
 				<input type="text" class="form-control" name="login" placeholder="login">
 			</div>
 			<div class="form-group">
 				<input type="password" class="form-control" name="password" placeholder="password">
 			</div>
-			<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
-			<a href="/authorization/register"><h5>Register</h5></a>
+			<div class="form-group">
+				<input type="password" class="form-control" name="passwordConfirm" placeholder="password confirmation">
+			</div>
+			<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
 		</form>
 	</div>
 </body>
